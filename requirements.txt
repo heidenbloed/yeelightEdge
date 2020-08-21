@@ -1,0 +1,3 @@
+yeelight
+paho-mqtt
+pyyaml

@@ -1,0 +1,9 @@
+mqtt:
+  host: xxx
+  port: 1883
+  user: xxx
+  password: xxx
+  topic: "home/lamp/yeelight"
+
+yeelight:
+  refreshingInterval: 60
