@@ -1,4 +1,4 @@
-#!venv/bin/python3.8
+#! venv/bin/python3
 
 import logging
 import sched
@@ -97,7 +97,6 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 client.username_pw_set(config["mqtt"]["user"], password=config["mqtt"]["password"])
-client.tls_set(ca_certs=config["mqtt"]["certpath"])
 logging.info(
     "Try to connected to MQTT broker \"{}\" at port \"{}\".".format(config["mqtt"]["host"], config["mqtt"]["port"]))
 client.connect(config["mqtt"]["host"], config["mqtt"]["port"], 60)
